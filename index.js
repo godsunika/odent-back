@@ -18,7 +18,7 @@ winston.add(new winston.transports.File({ filename: "logfile.log" }));
 
 const app = express();
 const corsOptions = {
-  origin             : ['http://localhost:3000'],
+  origin             : [process.env.IP_ALLOWED, process.env.IP_ALLOWED2],
   credentials        : true,
   optionSuccessStatus: 200,
 }
