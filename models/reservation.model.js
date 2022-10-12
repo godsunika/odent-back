@@ -14,7 +14,7 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false
     },
     reserved_total: {
-      type     : Sequelize.INTEGER(32),
+      type     : Sequelize.INTEGER,
       allowNull: false
     },
     reserved_date: {
