@@ -5,6 +5,7 @@ module.exports = {
   USER    : process.env.PGUSER,
   PASSWORD: process.env.PGPASSWORD,
   DB      : process.env.PGDATABASE,
+  PORT    : process.env.PGPORT,
   dialect : "postgres",
   pool    : {
     max    : 5,       // max number connection in pool
